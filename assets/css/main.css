@@ -1,5 +1,4 @@
 @import url(fontawesome-all.min.css);
-
 /*
 	Fractal by HTML5 UP
 	html5up.net | @ajlkn
@@ -325,7 +324,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #828282;
+		color: #7f3f98;
 	}
 
 	blockquote {
@@ -2325,32 +2324,41 @@ input, select, textarea {
 			box-shadow: none;
 			border-radius: 0;
 			margin: 0 0 3em 0;
-			width: 13em;
+			width: 80em;
+			height: 50em; 
+			display: flex; 
+			flex-direction: column;
+			justify-content: center;
+			 
+			background-image: url("../../images/logo_icon.png");
+			background-size: cover;
 		}
 
 			.image.phone img {
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 100%;
+				width: 80%;
+				margin-left: 5em; 
+				margin-right: 5em;
 			}
 
-			.image.phone .inner, .image.phone:before, .image.phone:after {
+			/* .image.phone .inner, .image.phone:before, .image.phone:after {
 				display: block;
 				border: solid 2px rgba(255, 255, 255, 0.25);
-			}
+			} */
 
-			.image.phone .inner {
+			/* .image.phone .inner {
 				position: relative;
-			}
+			} */
 
-				.image.phone .inner:before, .image.phone .inner:after {
+				/* .image.phone .inner:before, .image.phone .inner:after {
 					content: '';
 					position: absolute;
 					left: 50%;
-				}
+				} */
 
-				.image.phone .inner:before {
+				/* .image.phone .inner:before {
 					top: -1.375em;
 					margin-left: -1em;
 					width: 2em;
@@ -2366,8 +2374,8 @@ input, select, textarea {
 					height: 2em;
 					border-radius: 100%;
 					border: solid 2px rgba(255, 255, 255, 0.25);
-				}
-
+				} */
+/* 
 			.image.phone:before, .image.phone:after {
 				content: '';
 			}
@@ -2382,7 +2390,7 @@ input, select, textarea {
 				height: 3.5em;
 				border-radius: 0 0 1em 1em;
 				border-top: 0;
-			}
+			} */
 
 	.image {
 		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
@@ -2422,9 +2430,6 @@ input, select, textarea {
 		padding-left: 1em;
 	}
 
-		ul li {
-			padding-left: 0.5em;
-		}
 
 		ul.alt {
 			list-style: none;
@@ -2474,8 +2479,9 @@ input, select, textarea {
 	}
 
 		ul.actions li {
-			padding: 0 0 0 1em;
 			vertical-align: middle;
+			width: 100%; 
+			height: 80%; 
 		}
 
 		ul.actions.special {
@@ -3611,8 +3617,8 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-color: #4696e5;
-		color: #d1e5f9;
+		background-color: #d0d0d0;
+		color: #58585a;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3626,8 +3632,10 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("images/overlay.png"), url("images/pattern-size1.svg");
-		background-position: top left, center center;
+		/* background-image: url("images/overlay.png"), url("images/pattern-size1.svg"); */
+		/* background-image: url("../../images/logo_icon.png"); */
+		background-repeat: no-repeat;
+		background-position: right; 
 		background-attachment: fixed, fixed;
 		background-size: auto, cover;
 		height: 100vh;
@@ -3666,8 +3674,10 @@ input, select, textarea {
 			#header button.primary,
 			#header .button.primary {
 				box-shadow: none;
-				background-color: #ffffff;
-				color: #4696e5 !important;
+				background-color: #7f3f98;
+				color: #ffffff !important;
+				width: 70%; 
+				height: 90%; 
 			}
 
 		#header label {
@@ -3800,7 +3810,7 @@ input, select, textarea {
 		#header a {
 			color: inherit;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
-			color: #ffffff;
+			color: #7f3f98;
 		}
 
 		#header strong, #header b {
@@ -3808,7 +3818,7 @@ input, select, textarea {
 		}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #7f3f98;
 		}
 
 		#header blockquote {
@@ -3825,7 +3835,7 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			font-size: 3.25em;
+			font-size: 4em;
 			font-weight: bold;
 			margin-bottom: 0.5em;
 		}
@@ -3849,8 +3859,9 @@ input, select, textarea {
 			-ms-transform: translateX(0);
 			transform: translateX(0);
 			opacity: 1;
-			text-align: right;
-			margin: -3.5em 4em 0 0;
+			text-align: left;
+			margin-left: 7em; 
+			/* margin: -3em 2em 0 0; */
 		}
 
 			#header .content > :last-child {
@@ -3858,10 +3869,11 @@ input, select, textarea {
 			}
 
 			#header .content .actions {
-				-moz-justify-content: -moz-flex-end;
-				-webkit-justify-content: -webkit-flex-end;
-				-ms-justify-content: -ms-flex-end;
-				justify-content: flex-end;
+				-moz-justify-content: -moz-center;
+				-webkit-justify-content: -webkit-center;
+				-ms-justify-content: -ms-center;
+				justify-content: center;
+				height: 6em; 
 			}
 
 		#header .image {
