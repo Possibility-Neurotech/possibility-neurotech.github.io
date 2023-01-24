@@ -196,6 +196,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2725,11 +2726,39 @@ input, select, textarea {
 				width: 2rem;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px){
+
+			.iconsDiv{
+				height: 100%; 
+			}
+			ul.icons.major {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+			}
 
 			ul.icons.major li {
-				padding: 0 1.25em 0 0;
+				min-height: 4em;
+				margin-bottom: 2em;
 			}
+
+			ul.icons.major li .image{
+				min-height: 4em;
+			}
+
+			ul.icons.major li img.arrow {
+				transform: rotate(90deg);
+			}
+
+			ul.icons.major li {
+				padding: 0 0 0 0;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+
+			
 
 			
 
