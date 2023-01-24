@@ -2265,6 +2265,26 @@ input, select, textarea {
 		color: #e0e0e0;
 	}
 
+/* Video container div */
+
+	.vid_container_div {
+		position: relative;
+		padding-top:56.25%;
+		/* background-image: linear-gradient(top, red, red 70%, transparent 70%, transparent 100%);
+		background-image: -webkit-linear-gradient(top, red, red 70%, transparent 70%, transparent 100%); */
+	}
+
+	.vid_container_div > img {
+		position:absolute;
+		top:30%;
+		width:100%;
+		height:40%;
+	}
+
+	.vid_container_div > img.overlay {
+		opacity: 10%;
+	}
+
 /* Image */
 
 	.image {
