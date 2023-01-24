@@ -316,7 +316,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #4696e5;
+			color: #7f3f98;
 		}
 
 	strong, b {
@@ -2446,7 +2446,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		/* margin: 0 0 2em 0; */
 		padding-left: 1em;
 	}
 
@@ -2809,11 +2809,15 @@ input, select, textarea {
 			width: 70%;
 		}
 
+		.spotlight .content > h3 {
+			font-weight: bold;
+		}
+
 			.spotlight .content > :last-child {
 				margin-bottom: 0;
 			}
 
-		.spotlight:nth-child(2n) {
+		/* .spotlight:nth-child(2n) {
 			-moz-flex-direction: row-reverse;
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
@@ -2826,7 +2830,7 @@ input, select, textarea {
 
 			.spotlight:nth-child(2n) .content {
 				text-align: right;
-			}
+			} */
 
 	@media screen and (max-width: 736px) and (orientation: landscape) {
 
@@ -2956,21 +2960,21 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 4.5em 0 2.5em 0 ;
+		padding: 2.5em 0 2.5em 0 ;
 		background-color: #ffffff;
-		border-bottom: solid 2px #eeeeee;
+		/* border-bottom: solid 2px #eeeeee; */
 	}
 
 		.wrapper > .inner {
 			margin-left: auto;
 			margin-right: auto;
-			width: 50em;
+			width: 65em;
 		}
 
 			.wrapper > .inner.alt > * {
-				border-top: solid 2px #eeeeee;
+				/* border-top: solid 2px #eeeeee; */
 				margin-bottom: 0;
-				margin-top: 3em;
+				/* margin-top: 3em; */
 				padding-top: 3em;
 			}
 
