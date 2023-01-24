@@ -2611,10 +2611,19 @@ input, select, textarea {
 
 		ul.icons.major li {
 			padding: 0 2.5em 0 0;
+			vertical-align: middle;
 		}
 
 			ul.icons.major li .icon:before {
 				font-size: 2.75rem;
+			}
+
+			ul.icons.major li .image {
+				box-shadow: none;
+			}
+
+			ul.icons.major li img {
+				width: 7.5rem;
 			}
 
 		@media screen and (max-width: 736px) {
