@@ -4284,9 +4284,11 @@ input, select, textarea {
 	}
 
 	#contact ul {
+		width: 100%; 
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
 	}
+
 
 	#contact ul.icons.minor li {
 		margin-top: auto;
@@ -4308,13 +4310,64 @@ input, select, textarea {
 		padding: 0 0.75em 0 0;
 		vertical-align: middle;
 	}
+	
+	#contactEmail{
+		margin-left: 1em;
+	}
 
 	@media screen and (max-width: 980px) {
-
+		#contact ul.icons.minor li:first-child {
+			margin-left: 0em;
+			margin-right: auto;
+		}
+		#contact ul.icons.minor li:last-child {
+			margin-right: 0em;
+		}
 		#contact {
-			padding: 4em 4em 2em 4em ;
+			padding: 1em;
 		}
 
+	}
+
+	@media screen and (max-width: 736px){
+		#contactEmail{
+			margin-left: 0.75em;
+		}
+		#contact{
+			padding: 0.75em;
+		}
+		#contact ul.icons.minor {
+			width: 100%; 
+		}
+
+		#contact ul.icons.minor li:first-child {
+			margin-left: 0em;
+		}
+
+		#contact ul.icons.minor li:last-child {
+			margin-right: 0em;
+		}
+
+	}
+
+	@media screen and (max-width: 480px){
+		#contactEmail{
+			margin-left: 0.5em;
+		}
+		#contact ul.icons.minor {
+			width: 100%; 
+			flex-direction: column; 
+		}
+
+		#contact ul.icons.minor li:first-child {
+			margin-left: 0em;
+			margin-right: 0em;
+			margin-bottom: 1em;
+		}
+
+		#contact ul.icons.minor li:last-child {
+			margin-right: 0em;
+		}
 	}
 
 /* Main */
