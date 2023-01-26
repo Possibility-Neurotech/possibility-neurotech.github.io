@@ -2938,13 +2938,11 @@ input, select, textarea {
 			.content .news {
 				width: 100%;
 				display: flex;
-				/* flex-direction: column; */
 				align-items: center;
 			}
 
 			.news .media {
 				width: 100%;
-				/* text-align: justify; */
 				border-left: solid 2px #eeeeee;
 			}
 
@@ -3019,6 +3017,29 @@ input, select, textarea {
 				width: 100%;
 				text-align: center !important;
 			}
+
+			.content .news {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+			}
+			
+
+				.news .media {
+					border-left: none;
+					border-top: solid 2px #eeeeee;
+				}
+
+					.media > h4 {
+						margin: 1em 0 0 0;
+					}
+
+				.news .media:last-child {
+					border-right: none;
+					border-bottom: solid 2px #eeeeee;
+					margin: 1em 0 2em 0;
+				}
 
 	}
 
