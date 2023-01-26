@@ -4469,6 +4469,7 @@ input, select, textarea {
 
 		#footer .copyright {
 			font-size: 0.8em;
+			text-align: center;
 		}
 
 		@media screen and (max-width: 980px) {
