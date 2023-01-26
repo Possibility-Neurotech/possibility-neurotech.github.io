@@ -2928,6 +2928,43 @@ input, select, textarea {
 			width: 70%;
 		}
 
+		.spotlight:last-child .content {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+			.content .news {
+				width: 100%;
+				display: flex;
+				/* flex-direction: column; */
+				align-items: center;
+			}
+
+			.news .media {
+				width: 100%;
+				/* text-align: justify; */
+				border-left: solid 2px #eeeeee;
+			}
+
+				.media > span {
+					display: inline-block;
+					margin: 1em 12.5% 0 12.5%;
+				}
+
+				.media > h4 {
+					margin: 0 0 0 12.5%;
+				}
+
+				.media > h4:hover {
+					font-weight: bolder;
+				}
+			
+			.news .media:last-child {
+				border-right: solid 2px #eeeeee;
+			}
+
 		.spotlight .content > h3 {
 			font-weight: bold;
 		}
